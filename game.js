@@ -20,12 +20,30 @@ $(".btn").click(function(){
   
   playSound(userChosenColor);
   animatePress(userChosenColor);
+  checkAnswer(userClickedPattern.length -1);
 });
 
+function checkAnswer(currentLevel){ 
+  if(gamePattern[currentLevel] === gamePattern.lenght){
+    console.log("success!!!");
+
+    if(userClickedPattern.length === gamePattern.length){
+      setTimeout(()=>{
+        nextSquence();
+      }, 1000);
+    }
+
+  } else{
+    console.log("wrong!!");
+  }
+} 
+
+
 function nextSquence(){
+  userClickedPattern = []; // reseting the array.
   level++;
   $("#level-title").text("Level " + level);
-  
+
   var randomNumber = Math.floor(Math.random() * 4);
   var randomChosenColor = buttonColors[randomNumber];
   gamePattern.push(randomChosenColor);
