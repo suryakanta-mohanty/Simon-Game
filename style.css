@@ -8,6 +8,11 @@ body {
   font-size: 3rem;
   margin:  5%;
   color: #FEF2BF;
+  line-height: 5rem;
+}
+
+#level-title span{
+  font-size: 2rem;
 }
 
 .container {
