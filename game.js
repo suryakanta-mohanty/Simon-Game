@@ -6,12 +6,20 @@ var started = false;
 var level = 0;
 
 $(document).keypress(function (){
+  startGame();
+});
+
+$(document).click(function(){
+  startGame();
+});
+
+function startGame(){
   if(!started){
     $("#level-level").text("Level " + level);
     nextSquence();
     started = true;
   }
-});
+}
 
 $(".btn").click(function(){
 
