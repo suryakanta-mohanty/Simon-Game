@@ -101,3 +101,14 @@ body {
 .instruct_planel li{
   margin-bottom: 10px;
 }
+
+button{
+  position: fixed;
+  top: 60%;
+  right: 15%;
+  padding: 10px 25px;
+  border-radius: 15px;
+  border: 8px solid #FFD95F;
+  font-weight: bold;
+  cursor: pointer;
+}

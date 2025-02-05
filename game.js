@@ -5,6 +5,10 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 
+function refreshPage(){
+  window.location.reload();
+}
+
 $(document).keypress(function (){
   startGame();
 });
