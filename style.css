@@ -112,3 +112,74 @@ button{
   font-weight: bold;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  #level-title {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin: 10% 5% 3% 5%;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .btn {
+    width: 120px;
+    height: 120px;
+    margin: 15px;
+    border-width: 7px;
+  }
+
+  .instruction {
+    position: static;
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .instruct_planel {
+    height: auto;
+    overflow-y: visible;
+  }
+
+  button {
+    position: static;
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  #level-title {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+  }
+
+  .btn {
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+    border-width: 5px;
+  }
+
+  .instruction {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  .instruct_planel h3 {
+    font-size: 1rem;
+  }
+
+  button {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+}
